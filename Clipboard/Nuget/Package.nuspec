@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Xamarin.Plugins.Clipboard</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Xamarin Clipboard</title>
 	<authors>Stavros Kasidis (AkiraGTX)</authors>
     <owners>Stavros Kasidis (AkiraGTX)</owners>
@@ -15,17 +15,9 @@ Cross Platform Clipboard access for Xamarin
 Supported Platforms: Android, iOS, UWP
 	</summary>
     <description>
+Cross Platform Clipboard access for Xamarin
 
-
-How to Use:
-
-//To set the clipboard
-CrossClipboard.Current.SetText("my clipboard text");
-
-//To read the clipboard
-string clipboardText = CrossClipboard.Current.GetText();
-
-
+Supported Platforms: Android, iOS, UWP
 	</description>
     <releaseNotes>
 1.0
