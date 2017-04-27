@@ -25,3 +25,15 @@ CrossClipboard.Current.SetText("my clipboard text");
 string clipboardText = CrossClipboard.Current.GetText();
 
 ```
+
+### Using in unit tests
+
+```C#
+//Create mock with LigthMock (http://www.lightinject.net/)
+var mockClipboardContext = new MockContext<IClipboard>();
+var mockClipboard = new CrossClipboardMock(mockClipboardContext);
+
+CrossClipboard.Current = mockClipboard;
+```
+
+
