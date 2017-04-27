@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Xamarin.Plugins.Clipboard</id>
-    <version>1.0.2</version>
+    <version>1.1.0</version>
     <title>Xamarin Clipboard</title>
 	<authors>Stavros Kasidis (AkiraGTX)</authors>
     <owners>Stavros Kasidis (AkiraGTX)</owners>
@@ -22,6 +22,9 @@ Supported Platforms: Android, iOS, UWP
     <releaseNotes>
 1.0
 Initial release
+
+1.1
+Added Unit Test support. (Thanks to https://github.com/ArtjomP) 
 </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>xamarin xamarin-forms xamarin-android xamarin-uwp xamarin-ios ios android uwp clipboard</tags>

@@ -8,9 +8,7 @@ namespace Plugin.Clipboard
     /// </summary>
     public class CrossClipboard
     {
-        static Lazy<IClipboard> Implementation = new Lazy<IClipboard>(
-            () => CreateClipboard(), 
-            System.Threading.LazyThreadSafetyMode.PublicationOnly);
+        static Lazy<IClipboard> Implementation = new Lazy<IClipboard>(() => CreateClipboard(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
 
         /// <summary>
         /// Current settings to use
@@ -28,7 +26,7 @@ namespace Plugin.Clipboard
             }
             set
             {
-                Implementation = new Lazy<IClipboard>(() => value);
+                Implementation = new Lazy<IClipboard>(() => value, System.Threading.LazyThreadSafetyMode.PublicationOnly);
             }
         }
 
