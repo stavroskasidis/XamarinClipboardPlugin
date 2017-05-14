@@ -6,8 +6,8 @@
     <title>Xamarin Clipboard</title>
 	<authors>Stavros Kasidis (AkiraGTX)</authors>
     <owners>Stavros Kasidis (AkiraGTX)</owners>
-    <licenseUrl>https://github.com/AkiraGTX/XamarinClipboardPlugin/blob/master/LICENSE</licenseUrl>
-	<projectUrl>https://github.com/AkiraGTX/XamarinClipboardPlugin</projectUrl>
+    <licenseUrl>https://github.com/stavroskasidis/XamarinClipboardPlugin/blob/master/LICENSE</licenseUrl>
+	<projectUrl>https://github.com/stavroskasidis/XamarinClipboardPlugin</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<summary>
 Cross Platform Clipboard access for Xamarin
