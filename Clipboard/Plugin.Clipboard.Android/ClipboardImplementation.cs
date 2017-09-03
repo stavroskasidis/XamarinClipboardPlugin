@@ -2,6 +2,7 @@ using Android.App;
 using Android.Content;
 using Plugin.Clipboard.Abstractions;
 using System;
+using System.Threading.Tasks;
 
 
 namespace Plugin.Clipboard
@@ -11,7 +12,12 @@ namespace Plugin.Clipboard
     /// </summary>
     public class ClipboardImplementation : IClipboard
     {
-        public string GetText()
+
+        public async Task<string> GetText()
+        {
+            return await Task.Run(() => GetClipboard());
+        }
+        public string GetClipboard()
         {
             var clipboardManager = (ClipboardManager) Application.Context.GetSystemService(Context.ClipboardService);
             return clipboardManager.Text;

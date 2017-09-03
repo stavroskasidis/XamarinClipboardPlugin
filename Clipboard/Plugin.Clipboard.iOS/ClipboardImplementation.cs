@@ -1,6 +1,7 @@
 using Plugin.Clipboard.Abstractions;
 using System;
 using UIKit;
+using System.Threading.Tasks;
 
 namespace Plugin.Clipboard
 {
@@ -9,7 +10,12 @@ namespace Plugin.Clipboard
     /// </summary>
     public class ClipboardImplementation : IClipboard
     {
-        public string GetText()
+
+        public async Task<string> GetText()
+        {
+            return await Task.Run(() => GetClipboard());
+        }
+        public string GetClipboard()
         {
             UIPasteboard clipboard = UIPasteboard.General;
             return clipboard.String;
@@ -20,5 +26,7 @@ namespace Plugin.Clipboard
             UIPasteboard clipboard = UIPasteboard.General;
             clipboard.String = data;
         }
+
+       
     }
 }
