@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Plugin.Clipboard.Abstractions
 {
@@ -17,6 +18,6 @@ namespace Plugin.Clipboard.Abstractions
         /// Gets the clipboard's text.
         /// </summary>
         /// <returns></returns>
-        string GetText();
+        Task<string> GetText();
   }
 }
