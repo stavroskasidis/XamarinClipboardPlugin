@@ -22,7 +22,7 @@ Call **CrossClipboard.Current** from any project or PCL to gain access to APIs.
 CrossClipboard.Current.SetText("my clipboard text");
 
 //To read the clipboard
-string clipboardText = CrossClipboard.Current.GetText();
+string clipboardText = await CrossClipboard.Current.GetTextAsync();
 
 ```
 

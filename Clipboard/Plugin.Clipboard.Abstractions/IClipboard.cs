@@ -18,6 +18,13 @@ namespace Plugin.Clipboard.Abstractions
         /// Gets the clipboard's text.
         /// </summary>
         /// <returns></returns>
-        Task<string> GetText();
+        [Obsolete("Use the GetTextAsync() method")]
+        string GetText();
+
+        /// <summary>
+        /// Gets the clipboard's text.
+        /// </summary>
+        /// <returns></returns>
+        Task<string> GetTextAsync();
   }
 }

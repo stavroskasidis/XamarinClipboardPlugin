@@ -10,12 +10,17 @@ namespace Plugin.Clipboard
     /// </summary>
     public class ClipboardImplementation : IClipboard
     {
-
-        public async Task<string> GetText()
+        public Task<string> GetTextAsync()
         {
-            return await Task.Run(() => GetClipboard());
+            return Task.FromResult(GetTextInternal());
         }
-        public string GetClipboard()
+
+        public string GetText()
+        {
+            return GetTextInternal();
+        }
+
+        private string GetTextInternal()
         {
             UIPasteboard clipboard = UIPasteboard.General;
             return clipboard.String;

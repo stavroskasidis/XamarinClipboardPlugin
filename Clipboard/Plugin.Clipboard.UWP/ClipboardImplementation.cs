@@ -13,15 +13,24 @@ namespace Plugin.Clipboard
     /// </summary>
     public class ClipboardImplementation : IClipboard
     {
-        public async Task<string> GetText()
+        public string GetText()
         {
-            DataPackageView dataPackageView = Windows.ApplicationModel.DataTransfer.Clipboard.GetContent();
+            return GetTextInternal().Result;
+        }
+
+        public Task<string> GetTextAsync()
+        {
+            return GetTextInternal();
+        }
+
+        private Task<string> GetTextInternal()
+        {
+            var dataPackageView = Windows.ApplicationModel.DataTransfer.Clipboard.GetContent();
             if (dataPackageView.Contains(StandardDataFormats.Text))
             {
-                string text = await dataPackageView.GetTextAsync();
-                return text;
+                return dataPackageView.GetTextAsync().AsTask();
             }
-            return "";
+            return null;
         }
 
         public void SetText(string data)

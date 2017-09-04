@@ -13,11 +13,17 @@ namespace Plugin.Clipboard
     public class ClipboardImplementation : IClipboard
     {
 
-        public async Task<string> GetText()
+        public string GetText()
         {
-            return await Task.Run(() => GetClipboard());
+            return GetTextInternal();
         }
-        public string GetClipboard()
+
+        public Task<string> GetTextAsync()
+        {
+            return Task.FromResult(GetTextInternal());
+        }
+
+        private string GetTextInternal()
         {
             var clipboardManager = (ClipboardManager) Application.Context.GetSystemService(Context.ClipboardService);
             return clipboardManager.Text;
@@ -28,5 +34,7 @@ namespace Plugin.Clipboard
             var clipboardManager = (ClipboardManager)Application.Context.GetSystemService(Context.ClipboardService);
             clipboardManager.Text = data;
         }
+
+      
     }
 }
