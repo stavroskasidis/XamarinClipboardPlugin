@@ -4,7 +4,7 @@ Simple cross platform plugin to read and write to the clipboard.
 
 ### Setup
 * Available on NuGet: https://www.nuget.org/packages/Xamarin.Plugins.Clipboard/
-* Install into your PCL project and Client projects.
+* Install into your .NET Standard libraries and Client projects.
 
 
 ### Supports
@@ -14,7 +14,7 @@ Simple cross platform plugin to read and write to the clipboard.
 
 ### API Usage
 
-Call **CrossClipboard.Current** from any project or PCL to gain access to APIs.
+Call **CrossClipboard.Current** from any project or .NET Standard library to gain access to APIs.
 
 ```csharp
 
