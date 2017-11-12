@@ -32,7 +32,7 @@ namespace Plugin.Clipboard
 
         static IClipboard CreateClipboard()
         {
-#if PORTABLE
+#if NETSTANDARD1_0
             return null;
 #else
         return new ClipboardImplementation();

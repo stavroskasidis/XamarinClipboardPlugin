@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Clipboard", "Clipboard\Plugin.Clipboard\Plugin.Clipboard.csproj", "{A6FCEF44-D2BA-42C7-B3CB-13667BCD7B54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Clipboard", "Clipboard\Plugin.Clipboard\Plugin.Clipboard.csproj", "{A6FCEF44-D2BA-42C7-B3CB-13667BCD7B54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Clipboard.Abstractions", "Clipboard\Plugin.Clipboard.Abstractions\Plugin.Clipboard.Abstractions.csproj", "{6EDB0588-FFC5-4EF5-8A99-9E241D0F878D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Clipboard.Abstractions", "Clipboard\Plugin.Clipboard.Abstractions\Plugin.Clipboard.Abstractions.csproj", "{6EDB0588-FFC5-4EF5-8A99-9E241D0F878D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Clipboard.iOS", "Clipboard\Plugin.Clipboard.iOS\Plugin.Clipboard.iOS.csproj", "{2882AEEB-D4CD-4EB9-8A6C-6653B33681F0}"
 EndProject
@@ -336,7 +336,6 @@ Global
 		{B74E7F46-1CEA-47ED-A286-5333F1616194}.Debug|iPhone.Deploy.0 = Debug|Any CPU
 		{B74E7F46-1CEA-47ED-A286-5333F1616194}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{B74E7F46-1CEA-47ED-A286-5333F1616194}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{B74E7F46-1CEA-47ED-A286-5333F1616194}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
 		{B74E7F46-1CEA-47ED-A286-5333F1616194}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{B74E7F46-1CEA-47ED-A286-5333F1616194}.Debug|x64.Build.0 = Debug|Any CPU
 		{B74E7F46-1CEA-47ED-A286-5333F1616194}.Debug|x64.Deploy.0 = Debug|Any CPU
