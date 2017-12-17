@@ -14,9 +14,12 @@ Simple cross platform plugin to read and write to the clipboard.
 
 ### API Usage
 
-Call **CrossClipboard.Current** from any project or .NET Standard library to gain access to APIs.
+Call **Plugin.Clipboard.CrossClipboard.Current** from any project or .NET Standard library to gain access to APIs.
 
 ```csharp
+using Plugin.Clipboard;
+
+...
 
 //To set the clipboard
 CrossClipboard.Current.SetText("my clipboard text");
