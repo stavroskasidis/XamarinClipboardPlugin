@@ -53,13 +53,10 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.Mac" />
     <Reference Include="Plugin.Clipboard.Abstractions">
-      <HintPath>..\..\..\packages\Xamarin.Plugins.Clipboard.2.0.0\lib\netstandard1.0\Plugin.Clipboard.Abstractions.dll</HintPath>
+      <HintPath>..\..\..\packages\Xamarin.Plugins.Clipboard.2.1.1\lib\Xamarin.Mac20\Plugin.Clipboard.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.Clipboard">
-      <HintPath>..\..\..\packages\Xamarin.Plugins.Clipboard.2.0.0\lib\netstandard1.0\Plugin.Clipboard.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.Clipboard.Mac">
-      <HintPath>..\..\..\packages\Xamarin.Plugins.Clipboard.2.1.0\lib\Xamarin.Mac20\Plugin.Clipboard.Mac.dll</HintPath>
+      <HintPath>..\..\..\packages\Xamarin.Plugins.Clipboard.2.1.1\lib\Xamarin.Mac20\Plugin.Clipboard.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
