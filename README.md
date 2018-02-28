@@ -10,7 +10,9 @@ Simple cross platform plugin to read and write to the clipboard.
 ### Supports
 * Xamarin.Android
 * Xamarin.iOS
+* Xamarin.Mac
 * Windows 10 UWP
+
 
 ### API Usage
 
