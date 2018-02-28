@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Xamarin.Plugins.Clipboard</id>
-    <version>2.0.0</version>
+    <version>2.1.0</version>
     <title>Xamarin Clipboard</title>
 	<authors>Stavros Kasidis (AkiraGTX)</authors>
     <owners>Stavros Kasidis (AkiraGTX)</owners>
@@ -31,9 +31,12 @@ Fix for UWP. (Thanks to https://github.com/wilsonvargas)
 
 2.0
 Moved to .NET Standard
+
+2.1
+Added support for Xamarin.Mac
 </releaseNotes>
     <copyright>Copyright 2017</copyright>
-    <tags>xamarin xamarin-forms xamarin-android xamarin-uwp xamarin-ios ios android uwp clipboard</tags>
+    <tags>xamarin xamarin-forms xamarin-android xamarin-uwp xamarin-mac xamarin-ios ios android uwp clipboard</tags>
   </metadata>
    <files>
         <!-- .netstandard -->
@@ -44,6 +47,9 @@ Moved to .NET Standard
 
         <!-- ios -->
         <file src="..\Plugin.Clipboard.iOS\bin\iPhone\Release\Plugin.Clipboard.*" target="lib\Xamarin.iOS10" />
+		
+		<!-- mac -->
+        <file src="..\Plugin.Clipboard.Mac\bin\Release\Plugin.Clipboard.*" target="lib\Xamarin.Mac20" />
 
         <!-- uwp -->
         <file src="..\Plugin.Clipboard.UWP\bin\Release\Plugin.Clipboard.*" target="lib\UAP10" />
