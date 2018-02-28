@@ -12,12 +12,12 @@
 	<summary>
 Cross Platform Clipboard access for Xamarin
 		
-Supported Platforms: Android, iOS, UWP
+Supported Platforms: Android, iOS, Mac, UWP
 	</summary>
     <description>
 Cross Platform Clipboard access for Xamarin
 
-Supported Platforms: Android, iOS, UWP
+Supported Platforms: Android, iOS, Mac, UWP
 	</description>
     <releaseNotes>
 1.0
