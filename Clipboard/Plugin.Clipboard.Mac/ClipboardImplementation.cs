@@ -2,6 +2,7 @@ using Plugin.Clipboard.Abstractions;
 using System;
 using System.Threading.Tasks;
 using AppKit;
+using Foundation;
 
 namespace Plugin.Clipboard
 {
@@ -20,7 +21,7 @@ namespace Plugin.Clipboard
             return GetTextInternal();
         }
 
-        private readonly string[] pboardTypes = { "NSPasteboardTypeString" };
+        private readonly string[] pboardTypes = { "NSStringPboardType" };
 
         private string GetTextInternal()
         {
