@@ -1,4 +1,4 @@
-## Clipboard Plugin for Xamarin and Windows
+## Clipboard Plugin for Xamarin, Windows & Gtk2
 
 Simple cross platform plugin to read and write to the clipboard.
 
@@ -12,6 +12,7 @@ Simple cross platform plugin to read and write to the clipboard.
 * Xamarin.iOS
 * Xamarin.Mac
 * Windows 10 UWP
+* Gtk# 2.12
 
 
 ### API Usage
