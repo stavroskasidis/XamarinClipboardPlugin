@@ -34,9 +34,12 @@ Moved to .NET Standard
 
 2.1
 Added support for Xamarin.Mac
+
+2.2
+Added support for Gtk# 2.12. (Thanks to https://github.com/knocte)
 </releaseNotes>
     <copyright>Copyright 2017</copyright>
-    <tags>xamarin xamarin-forms xamarin-android xamarin-uwp xamarin-mac xamarin-ios ios android uwp clipboard</tags>
+    <tags>xamarin xamarin-forms xamarin-android xamarin-uwp xamarin-mac xamarin-ios ios android uwp gtk clipboard</tags>
   </metadata>
    <files>
         <!-- .netstandard -->
@@ -54,5 +57,7 @@ Added support for Xamarin.Mac
         <!-- uwp -->
         <file src="..\Plugin.Clipboard.UWP\bin\Release\Plugin.Clipboard.*" target="lib\UAP10" />
 
+        <!-- gtk -->
+        <file src="..\Plugin.Clipboard.Gtk\bin\Release\Plugin.Clipboard.*" target="lib\GtkSharp2" />
     </files>
 </package>
