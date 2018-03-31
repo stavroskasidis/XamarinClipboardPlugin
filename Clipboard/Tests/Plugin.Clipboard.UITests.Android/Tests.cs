@@ -9,22 +9,25 @@ using System.Threading.Tasks;
 
 namespace Plugin.Clipboard.UITests.Android
 {
-    [TestFixture(Platform.Android)]
-    //[TestFixture(Platform.iOS)]
+    [TestFixture]
     public class Tests
     {
         IApp _app;
-        Platform _platform;
-        public Tests(Platform platform)
-        {
-            _platform = platform;
-        }
 
 
         [SetUp]
         public void BeforeEachTest()
         {
-            _app = AppInitializer.StartApp(_platform);
+#if DEBUG
+            string config = "Debug";
+#else
+            string config = "Release";
+#endif
+
+            _app = ConfigureApp
+                .Android
+                .ApkFile($@"..\..\..\..\TestProjects\Plugin.Clipboard.Tests.Android\bin\{config}\Plugin.Clipboard.Tests.Android.apk")
+                .StartApp();
         }
 
         [Test]
