@@ -10,7 +10,7 @@ namespace Plugin.Clipboard.Tests.UWP
     {
 
         [TestMethod]
-        public void UWP_SetGetClipboard_RoundtripCase_ResultIsCorrect()
+        public void SetGetClipboard_RoundtripCase_ResultIsCorrect()
         {
             Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
