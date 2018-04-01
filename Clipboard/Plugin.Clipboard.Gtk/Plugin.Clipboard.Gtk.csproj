@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{38CB368D-5DEF-4471-944C-AD63A2DDDCF5}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Plugin.Clipboard.Gtk</RootNamespace>
-    <AssemblyName>Plugin.Clipboard.Gtk</AssemblyName>
+    <RootNamespace>Plugin.Clipboard</RootNamespace>
+    <AssemblyName>Plugin.Clipboard</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
