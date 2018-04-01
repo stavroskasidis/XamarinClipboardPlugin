@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Xamarin.Plugins.Clipboard</id>
-    <version>2.2.0</version>
+    <version>2.2.1</version>
     <title>Xamarin Clipboard</title>
 	<authors>Stavros Kasidis (AkiraGTX)</authors>
     <owners>Stavros Kasidis (AkiraGTX)</owners>
