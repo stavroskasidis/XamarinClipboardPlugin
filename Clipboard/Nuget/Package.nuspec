@@ -51,7 +51,7 @@ Added support for Gtk# 2.12. (Thanks to https://github.com/knocte)
         <!-- ios -->
         <file src="..\Plugin.Clipboard.iOS\bin\iPhone\Release\Plugin.Clipboard.*" target="lib\Xamarin.iOS10" />
 		
-		<!-- mac -->
+	<!-- mac -->
         <file src="..\Plugin.Clipboard.Mac\bin\Release\Plugin.Clipboard.*" target="lib\Xamarin.Mac20" />
 
         <!-- uwp -->
