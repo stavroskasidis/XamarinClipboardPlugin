@@ -13,6 +13,7 @@ Simple cross platform plugin to read and write to the clipboard.
 * Xamarin.Mac
 * Windows 10 UWP
 * Gtk# 2.12
+* WPF 4.7.2
 
 
 ### API Usage
